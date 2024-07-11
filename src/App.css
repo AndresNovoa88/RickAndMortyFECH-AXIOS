@@ -1,0 +1,107 @@
+:root {
+  --main-bg-color: #282c34;
+  --main-text-color: #ffffff;
+  --secondary-bg-color: #ffffff;
+  --secondary-text-color: #000000;
+  --accent-color: #61dafb;
+  --font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+.character {
+  border: 1px solid var(--accent-color);
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.character:hover {
+  transform: scale(1.05);
+}
+
+.character-details {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.character-details img {
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: darken(var(--accent-color), 10%);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Explicación de los Cambios
+Variables CSS: Definimos algunas variables en :root para los colores y fuentes principales. 
+Esto nos permite cambiar fácilmente el tema de la aplicación modificando solo estas variables.
+
+Estilos Globales:
+
+Eliminamos el margen predeterminado del cuerpo y establecemos una fuente y un color de fondo global.
+Establecemos el color de texto y el color de fondo del cuerpo para asegurar que toda la aplicación 
+tenga un fondo consistente.
+
+Estilos de la Aplicación:
+
+Añadimos padding al contenedor principal (.App) para darle algo de espacio alrededor del contenido.
+Estilizamos el título (h1) con un color de acento.
+Estilos de los Personajes:
+
+Añadimos un borde y un fondo de color secundario a los contenedores de personajes (.character).
+Añadimos un efecto hover para que los contenedores de personajes crezcan ligeramente cuando el 
+cursor pase por encima.
+Establecemos una transición para hacer que el efecto hover sea más suave.
+Estilizamos las imágenes de los personajes para que tengan un tamaño y un borde red
+Detalles del Personaje:
+
+Alineamos el texto a la izquierda para los detalles del personaje (.character-details).
+Hacemos que las imágenes dentro de los detalles del personaje se ajusten al 100% del contenedor y 
+les añadimos bordes redondeados.
+
+Botones:
+
+Estilizamos los botones con un color de fondo de acento, sin bordes y con bordes redondeados.
+Añadimos un efecto hover para cambiar ligeramente el color de fondo cuando el cursor pase por encima.
+Listas:
+
+Eliminamos el estilo predeterminado de las listas (ul) y establecemos un margen inferior para los 
+elementos de lista (li).*/
